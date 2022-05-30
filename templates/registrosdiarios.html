@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>  Registros diários  </h1>
+<p> DATA: </p>
+<p> NOME: </p>
+<select class="form-select" aria-autocomplete="both" aria-label="Default select example">
+  <option selected>Nome do usuário</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<p> INTERVENÇÃO: </p>
+<select class="form-select" aria-autocomplete="both" aria-label="Default select example">
+  <option selected>Selecionar intervenção</option>
+  <option value="Hidroginástica">Hidroginástica</option>
+  <option value="Relaxamento">Relaxamento</option>
+  <option value="Pilates">Pilates</option>
+</select>
+
+<p> TURMAS: </p>
+<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>Turmas disponíveis</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+</select>
+
+<p> DOENÇAS: </p>
+<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>Doenças relatadas</option>
+  <option value="Hipertensão">Hipertensão</option>
+  <option value="Diabetes">Diabetes</option>
+</select>
+
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="observacoes" class="col-form-label">OBSERVAÇÕES:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="observacoes" class="form-control" aria-describedby="observacoesHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="observacoesHelpInline" class="form-text">
+      Colocar motivos de ausencia ou repeticao de medidas.
+    </span>
+  </div>
+</div>
+
+<p> PRÉ-INTERVENÇÃO: </p>
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="paspre" class="col-form-label">PAS:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="paspre" class="form-control" aria-describedby="paspreHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="paspreHelpInline" class="form-text">
+      (<= 160 mmHG; Ex:123).
+    </span>
+  </div>
+</div>
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="padpre" class="col-form-label">PAD:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="padpre" class="form-control" aria-describedby="padpreHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="padpreHelpInline" class="form-text">
+      (<= 90 mmHG; Ex:78).
+    </span>
+  </div>
+</div>
+
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="glicpre" class="col-form-label">GLIC:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="glicpre" class="form-control" aria-describedby="glicpreHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="glicpreHelpInline" class="form-text">
+      (<= 120; Ex:82).
+    </span>
+  </div>
+</div>
+
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="fcpre" class="col-form-label">FC:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="fcpre" class="form-control" aria-describedby="fcpreHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="fcpreHelpInline" class="form-text">
+      (<= ??; Ex:85).
+    </span>
+  </div>
+</div>
+
+<br/><br/>
+<button type="button" class="btn btn-outline-danger btn-lg">REGISTRAR PRÉ</button>
+
+
+<p> PÓS-INTERVENÇÃO: </p>
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="paspos" class="col-form-label">PAS:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="paspos" class="form-control" aria-describedby="pasposHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="pasposHelpInline" class="form-text">
+      (<= 160 mmHG; Ex:123).
+    </span>
+  </div>
+</div>
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="padpos" class="col-form-label">PAD:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="padpos" class="form-control" aria-describedby="padposHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="padposHelpInline" class="form-text">
+      (<= 90 mmHG; Ex:78).
+    </span>
+  </div>
+</div>
+
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="glicpos" class="col-form-label">GLIC:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="glicpos" class="form-control" aria-describedby="glicposHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="glicposHelpInline" class="form-text">
+      (<= 120; Ex:82).
+    </span>
+  </div>
+</div>
+
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="fcpos" class="col-form-label">FC:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="fcpos" class="form-control" aria-describedby="fcposHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="fcposHelpInline" class="form-text">
+      (<= ??; Ex:85).
+    </span>
+  </div>
+</div>
+
+<br/><br/>
+<button type="button" class="btn btn-outline-danger btn-lg">REGISTRAR PÓS</button>
+
+<br/><br/>
+<button type="button" class="btn btn-outline-warning btn-lg">HISTÓRICO DIÁRIO</button>
+
+{% endblock %}
